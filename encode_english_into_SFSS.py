@@ -1,7 +1,8 @@
-'''This encodes english symbols + spaces and exclamation points into the appropriate SFSS translation.
+'''This encodes ASCII alphabetic symbols + spaces and exclamation points into the appropriate SFSS alphabetic translation.
 While the encoding of space was not originally included in RFC 4824, we figured that the participants in
 this protocol might need a break from signalling large messages. Thus the symbol for space is encoded 
 as the transmitting interface holding a soda thus reinforcing common breaks. '''
+# Note: any character without an encoding will result in a ! being sent
 
 def split_n(s, n):
     result = []
