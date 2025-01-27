@@ -25,6 +25,7 @@ alpha_in = open("alphabet.txt", "r")
 mapping = {}
 for line_idx, line in enumerate(alpha_in.readlines()):
     index_alphabet_pieces(line_idx, split_n(line, 5), mapping, ascii_to_map)
+alpha_in.close()
 val = input("Enter your message(A-Za-z !): ").lower()
 output = [[],[],[]]
 for char in val:
